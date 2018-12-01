@@ -1,6 +1,6 @@
-package com.twentyonedaysapp.core.di
+package com.github.ariefannur.boilerplate.core.di
 
-import com.twentyonedaysapp.core.base.MyApp
+import com.github.ariefannur.boilerplate.core.base.MyApp
 import dagger.Component
 import javax.inject.Singleton
 

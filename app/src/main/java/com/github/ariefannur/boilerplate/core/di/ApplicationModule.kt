@@ -1,8 +1,8 @@
-package com.twentyonedaysapp.core.di
+package com.github.ariefannur.boilerplate.core.di
 
 import android.app.Application
 import android.content.Context
-import com.twentyonedaysapp.BuildConfig
+import com.github.ariefannur.boilerplate.BuildConfig
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

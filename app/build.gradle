@@ -8,7 +8,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.twentyonedaysapp"
+        applicationId "com.github.arief.annur.boilerplate"
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1

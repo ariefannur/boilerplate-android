@@ -1,10 +1,10 @@
-package com.twentyonedaysapp.core.base
+package com.github.ariefannur.boilerplate.core.base
 
 import android.app.Application
-import com.twentyonedaysapp.BuildConfig
-import com.twentyonedaysapp.core.di.ApplicationComponent
-import com.twentyonedaysapp.core.di.ApplicationModule
-import com.twentyonedaysapp.core.di.DaggerApplicationComponent
+import com.github.ariefannur.boilerplate.core.di.ApplicationComponent
+import com.github.ariefannur.boilerplate.core.di.ApplicationModule
+import com.github.ariefannur.boilerplate.core.di.DaggerApplicationComponent
+import com.github.ariefannur.boilerplate.BuildConfig
 import timber.log.Timber
 
 class MyApp : Application() {

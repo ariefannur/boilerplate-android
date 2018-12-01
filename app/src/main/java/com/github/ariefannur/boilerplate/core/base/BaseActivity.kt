@@ -1,4 +1,4 @@
-package com.twentyonedaysapp.core.base
+package com.github.ariefannur.boilerplate.core.base
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

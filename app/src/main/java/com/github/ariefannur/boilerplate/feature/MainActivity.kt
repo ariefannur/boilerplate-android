@@ -1,7 +1,7 @@
-package com.twentyonedaysapp.feature
+package com.github.ariefannur.boilerplate.feature
 
-import com.twentyonedaysapp.R
-import com.twentyonedaysapp.core.base.BaseActivity
+import com.github.ariefannur.boilerplate.core.base.BaseActivity
+import com.github.ariefannur.boilerplate.R
 
 class MainActivity : BaseActivity() {
 

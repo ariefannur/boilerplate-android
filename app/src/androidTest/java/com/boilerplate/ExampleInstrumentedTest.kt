@@ -1,4 +1,4 @@
-package com.twentyonedaysapp
+package com.boilerplate
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

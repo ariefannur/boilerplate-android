@@ -1,4 +1,4 @@
-package com.twentyonedaysapp
+package com.boilerplate
 
 import org.junit.Test
 
