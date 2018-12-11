@@ -1,7 +1,9 @@
-# Ireng-Jambon-boilerplate-android
+# Ireng Jambon Boilerplate Android
+
+<img src="asset/ireng-jambon.png" alt="icon ireng jambon" width="80" height="80">
 Ireng Jambon Android boilerplate
 
-## Specsification
+## Specification
 - Dagger
 - Kotlin
 - Retrofit/Okhttp
