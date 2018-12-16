@@ -7,8 +7,12 @@ Ireng Jambon Android boilerplate
 - Dagger
 - Kotlin
 - Retrofit/Okhttp
-- Glide
+- Picaso
 - RxJava
 - Android Architecture Room, LiveData, ViewModel
+- MVVM Pattern
+- Proguard Rule
 
 
+## Usage
+very easy to use just as a simple create view
