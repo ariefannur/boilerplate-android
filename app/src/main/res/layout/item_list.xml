@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="8dp"
+android:paddingBottom="8dp">
+
+    <ImageView android:id="@+id/img_user" android:layout_width="46dp"
+               android:layout_height="46dp"
+               android:layout_marginRight="@dimen/activity_horizontal_margin"
+    />
+
+    <TextView android:id="@+id/tv_user" android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+</LinearLayout>

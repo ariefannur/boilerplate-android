@@ -9,11 +9,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import com.github.ariefannur.boilerplate.R
 import com.google.android.material.textfield.TextInputLayout
+import com.squareup.picasso.Picasso
+import io.reactivex.Observable
+import io.reactivex.android.schedulers.AndroidSchedulers
+import io.reactivex.schedulers.Schedulers
 import timber.log.Timber
 import java.util.regex.Pattern
 
@@ -117,6 +124,32 @@ fun EditText.checkEmail(textInputLayout:TextInputLayout){
 
     })
 }
+
+fun ImageView.loadImage(url:String){
+    Picasso.get().load(url).into(this)
+}
+
+fun <T> ViewModel.asyncRxExecutor(heavyFunction: Observable<T>, state: MutableLiveData<State>, response : (response : T?) -> Unit, error: (error : Throwable) -> Unit) {
+    state.postValue(State.LOADING)
+
+    heavyFunction.subscribeOn(Schedulers.newThread())
+        .observeOn(AndroidSchedulers.mainThread())
+        .subscribe(
+            {
+                response(it)
+                state.postValue(State.COMPLETE)
+            },{
+                state.postValue(State.COMPLETE)
+                error(it)
+            }
+        )
+}
+
+
+
+
+
+
 
 
 

@@ -33,7 +33,7 @@ android {
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
 
-            buildConfigField "String", "BASE_URL", "\"https://myserver.com\""
+            buildConfigField "String", "BASE_URL", "\"https://api.github.com/repos/\""
         }
         prod {
 
@@ -79,6 +79,8 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid_version"
     implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
     implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     implementation 'com.google.dagger:dagger:2.19'
     kapt 'com.google.dagger:dagger-compiler:2.19'

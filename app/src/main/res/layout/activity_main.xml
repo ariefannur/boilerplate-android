@@ -7,13 +7,23 @@
         android:layout_height="match_parent"
         tools:context=".feature.MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
+    <include layout="@layout/toolbar" />
+
+    <ProgressBar android:id="@+id/progress"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:indeterminate="true"
+                 style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                 app:layout_constraintTop_toBottomOf="@+id/toolbar"
+
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+    app:layout_constraintTop_toBottomOf="@id/progress">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
