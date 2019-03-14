@@ -18,7 +18,7 @@ Ireng Jambon Android boilerplate
 very easy to use just as a simple create view
 - Create ViewModel and Provide it in the modul 
 ```
-class MainViewModel @Inject constructor(val api:Api) :ViewModel() {
+class MainViewModel @Inject constructor(val api:Api) :BaseViewModel() {
 
     public var state:MutableLiveData<State> = MutableLiveData()
     public var data:MutableLiveData<Pair<List<Contributor>?, Throwable>> = MutableLiveData()
