@@ -132,7 +132,7 @@ fun ImageView.loadImage(url:String){
 fun <T> ViewModel.asyncRxExecutor(heavyFunction: Observable<T>, state: MutableLiveData<State>, response : (response : T?) -> Unit, error: (error : Throwable) -> Unit) {
     state.postValue(State.LOADING)
 
-    heavyFunction.subscribeOn(Schedulers.newThread())
+    val disposable = heavyFunction.subscribeOn(Schedulers.newThread())
         .observeOn(AndroidSchedulers.mainThread())
         .subscribe(
             {
@@ -143,6 +143,7 @@ fun <T> ViewModel.asyncRxExecutor(heavyFunction: Observable<T>, state: MutableLi
                 error(it)
             }
         )
+    Constants.compositeDisposable.add(disposable)
 }
 
 
