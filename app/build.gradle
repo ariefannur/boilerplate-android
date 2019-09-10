@@ -94,6 +94,7 @@ dependencies {
 
     implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid_version"
     implementation "io.reactivex.rxjava2:rxjava:$rxJava_version"
+    implementation "com.jakewharton.rxrelay2:rxrelay:2.1.0"
     implementation 'com.jakewharton.timber:timber:4.7.1'
 
     implementation 'com.squareup.picasso:picasso:2.71828'
