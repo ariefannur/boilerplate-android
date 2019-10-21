@@ -1,4 +1,5 @@
 # Ireng Jambon Boilerplate Android
+[![Build Status](https://travis-ci.com/ariefannur/boilerplate-android.svg?branch=master)](https://travis-ci.com/ariefannur/boilerplate-android)
 
 <img src="asset/ireng-jambon.png" alt="icon ireng jambon" width="80" height="80">
 Ireng Jambon Android boilerplate
