@@ -12,7 +12,9 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:name="com.github.ariefannur.boilerplate.core.base.MyApp">
-        <activity android:name="com.github.ariefannur.boilerplate.feature.MainActivity">
+        <activity
+            android:name=".feature.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

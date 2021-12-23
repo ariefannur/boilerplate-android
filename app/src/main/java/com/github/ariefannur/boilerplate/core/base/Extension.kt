@@ -21,7 +21,6 @@ import com.squareup.picasso.Picasso
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import timber.log.Timber
 import java.util.regex.Pattern
 
 fun Context.inflate(layoutId:Int, viewGroup: ViewGroup?):View{
@@ -36,7 +35,7 @@ fun Context.savePref(key:String, value:String){
 
 fun Context.getPref(key: String):String{
     this.getSharedPreferences(Constants.my_pref, Context.MODE_PRIVATE).apply {
-        return getString(key, "")
+        return getString(key, "") ?: ""
     }
 
 }
@@ -48,7 +47,6 @@ fun Context.saveBooleanPref(key:String, value:Boolean){
 
 fun Context.getBooleanPref(key: String):Boolean{
     this.getSharedPreferences(Constants.my_pref,Context.MODE_PRIVATE).apply {
-        Timber.d("AF login : "+getBoolean(key, false))
         return getBoolean(key, false)
     }
 
