@@ -13,6 +13,7 @@
                  android:layout_width="match_parent"
                  android:layout_height="wrap_content"
                  android:indeterminate="true"
+                android:visibility="gone"
                  style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
                  app:layout_constraintTop_toBottomOf="@+id/toolbar"
 

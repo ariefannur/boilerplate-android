@@ -7,7 +7,7 @@ import com.github.ariefannur.boilerplate.core.di.DaggerApplicationComponent
 import com.github.ariefannur.boilerplate.BuildConfig
 import timber.log.Timber
 
-class MyApp : Application() {
+open class MyApp : Application() {
 
    val appComponent: ApplicationComponent by lazy(mode = LazyThreadSafetyMode.NONE) {
         DaggerApplicationComponent

@@ -18,8 +18,6 @@ import timber.log.Timber
 
 class MainActivity : BaseActivity() {
 
-
-
     override fun setLayout(): Int {
        return R.layout.activity_main
     }
@@ -35,7 +33,7 @@ class MainActivity : BaseActivity() {
             val (data, error) = it
             if(data != null){
                 rv_main.adapter = Adapter(data)
-                Timber.d("AF data : ${data.size}")
+                Timber.d("AF data : ${data[0].login}")
             }else{
                 Timber.d("AF error $it")
             }
